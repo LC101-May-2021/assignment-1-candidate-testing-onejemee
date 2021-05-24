@@ -26,7 +26,7 @@ if (candidateAnswer == correctAnswer) {
   } else {
     console.log("Incorrect. Please restart quiz. ")
   }
-
+}
 
 
 function gradeQuiz(candidateAnswers) {

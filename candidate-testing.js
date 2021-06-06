@@ -40,7 +40,7 @@ function gradeQuiz(candidateAnswers) {
       grade = grade + 1;
     }
   };
-  console.log(`>>> Overall Grade: ${(grade/questions.length)*100%} (${grade} of 5 responses correct) <<<`)
+  console.log(`>>> Overall Grade: ${(grade/questions.length)*100}% (${grade} of 5 responses correct) <<<`)
   if (grade < 4) {
     console.log(">>> Status: FAILED <<<")
   } else console.log(">>> Status: PASSED <<<")

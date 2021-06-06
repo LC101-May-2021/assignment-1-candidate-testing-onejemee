@@ -8,9 +8,9 @@ let candidateName = "";
 let question = "Who was the first American woman in space? ";
 let correctAnswer = "Sally Ride";
 let candidateAnswer = "";
-let questions = ["1) Who was the first American woman in space?", "2) True or false: 5 kilometer == 5000 meters?", 	
+let questions = [ "1) Who was the first American woman in space?", "2) True or false: 5 kilometer == 5000 meters?", 	
 "3) (5 + 3)/2 * 10 = ?", "4) Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?", 	
-"5) What is the minimum crew size for the ISS?"];
+"5) What is the minimum crew size for the ISS?" ];
 let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"]
 let candidateAnswers = [];
 
@@ -44,11 +44,8 @@ function gradeQuiz(candidateAnswers) {
   if (grade < 4) {
     console.log(">>> Status: FAILED <<<")
   } else console.log(">>> Status: PASSED <<<")
-   
-  
-
-  return grade;
 }
+
 
 function runProgram() {
   askForName(); 
@@ -56,7 +53,6 @@ function runProgram() {
   let candidateAnswers_1 = askQuestion(this.questions); 
   gradeQuiz(candidateAnswers_1);
 }
-
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
 module.exports = {

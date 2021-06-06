@@ -47,7 +47,7 @@ function gradeQuiz(candidateAnswers) {
     console.log(">>> Status: PASSED <<<")
   }
   return (grade/questions.length)*100)
-
+}
 
 function runProgram() {
   askForName(); 
